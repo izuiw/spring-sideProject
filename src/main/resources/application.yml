@@ -1,0 +1,23 @@
+mybatis:
+  config-location: classpath:/mybatis-config.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/mappers/*.xml
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: 8797448
+    url: jdbc:mariadb://localhost:3303/tester
+    username: root
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
